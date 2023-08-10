@@ -18,7 +18,8 @@ for key, value in data.items():
         anomaly_array.append(anomaly)
 print(anomaly_array)
 for anomaly in anomaly_array:
-    path='/'+anomaly
+    path='./'+anomaly
+    print(path)
     os.mkdir(path)
 for key, value in data.items():
     anomaly_class = value["anomaly_class"]
